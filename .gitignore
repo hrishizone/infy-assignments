@@ -205,3 +205,25 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+
+# --- AWS SAM build artifacts ---
+.aws-sam/
+
+# --- Lambda layer build output ---
+# Dependencies installed into the layer
+layer/mysql-layer/python/
+
+# Layer / package zips
+*.zip
+
+# --- VS Code workspace (optional) ---
+.vscode/
+
+# --- Web frontend build artifacts (if you build under web/) ---
+web/node_modules/
+dist/
+web/build/
+web/.parcel-cache/
+
+samconfig.toml
